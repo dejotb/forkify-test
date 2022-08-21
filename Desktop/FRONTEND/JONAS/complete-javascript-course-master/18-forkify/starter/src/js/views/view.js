@@ -3,6 +3,13 @@ import icons from 'url:../../img/icons.svg'; // Parcel 2
 export default class View {
   _data;
 
+  /**
+   *
+   * @param {*} data
+   * @param {*} render
+   *
+   */
+
   render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
